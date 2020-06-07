@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap');
 
 *,
 *::before,
@@ -319,7 +319,7 @@ to align it properly */
 }
 
 .progress-line::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -329,7 +329,7 @@ to align it properly */
 }
 
 .progress-line::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -452,7 +452,7 @@ to align it properly */
 }
 
 .exp-data::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 13px;
   height: 13px;
@@ -471,7 +471,7 @@ to align it properly */
 }
 
 .exp-wrapper::before {
-  content: "";
+  content: '';
   height: 100%;
   position: absolute;
   line-height: 25px;
@@ -687,28 +687,30 @@ textarea {
 }
 
 .menu-toggle {
+  /* background-color: white; */
   color: #fff;
   float: right;
   cursor: pointer;
   display: none;
+  /* position: absolute; */
 }
 
 /* ********Mobile Responsive********* */
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1280px) {
   /* ***********Sidebar***************** */
 
   .menu-toggle {
     display: flex;
-    padding: 10px 15px 0px 10px;
+    padding: 10px;
   }
 
   .sidenav {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #2e344e;
-    top: 50px;
+    background-color: #191d2b;
+    top: 0px;
     left: -100%;
     transition: 0.5s;
     flex-direction: column;
@@ -722,19 +724,20 @@ textarea {
   }
 
   .sidebar {
+    background-color: transparent;
     position: sticky;
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
-    height: 10%;
+    /* height: 10%; */
     top: 0;
     z-index: 1;
-    box-shadow: 1px 1px 7px black;
+    /* box-shadow: 1px 1px 7px black; */
   }
 
   .sidenav li {
     padding: 20px 0px;
-    border-bottom: 1px solid #151722;
+    border-bottom: 1px solid #34364b;
     width: 100%;
   }
 
@@ -819,7 +822,7 @@ textarea {
   }
 
   .exp-data::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 13px;
     height: 13px;
